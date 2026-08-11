@@ -1,0 +1,705 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #06142f;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 6%;
+
+    background: rgba(3, 13, 35, 0.95);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #ffd000;
+    font-size: 28px;
+}
+
+.logo small {
+    color: #ffd000;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar nav a:hover {
+    color: #ffd000;
+}
+
+.nav-btn,
+.primary-btn,
+.register-btn {
+    background: #ffd000;
+    color: #06142f;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    font-weight: 800;
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+
+/* HERO */
+
+.hero {
+
+    min-height: 90vh;
+
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background:
+        radial-gradient(circle at 80% 40%, #123e83 0%, transparent 35%),
+        linear-gradient(135deg, #020a20, #09265a);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.badge {
+
+    display: inline-block;
+
+    background: #ffd000;
+    color: #07152f;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+
+    font-size: clamp(45px, 7vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #ffd000;
+}
+
+.hero-subtitle {
+
+    font-size: clamp(22px, 3vw, 38px);
+
+    font-weight: 800;
+
+    color: #fff;
+}
+
+.hero-description {
+
+    max-width: 650px;
+
+    color: #b9c9e8;
+
+    font-size: 18px;
+
+    margin: 20px 0 30px;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+
+    border: 1px solid white;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+}
+
+.free-text {
+
+    margin-top: 25px;
+
+    color: #ffd000;
+
+    font-weight: 800;
+}
+
+
+/* AI VISUAL */
+
+.hero-visual {
+
+    min-height: 450px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.ai-circle {
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid #25a8ff;
+
+    box-shadow:
+        0 0 30px #168bff,
+        0 0 100px rgba(0,150,255,0.4);
+
+    background:
+        radial-gradient(circle,
+        #0c77bd,
+        #051a40 70%);
+}
+
+.ai-circle span {
+
+    font-size: 90px;
+
+    font-weight: 900;
+
+    color: #bdf3ff;
+
+    text-shadow: 0 0 25px #00bfff;
+}
+
+.formula {
+
+    position: absolute;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    color: #d9efff;
+}
+
+.formula1 {
+    top: 10%;
+    right: 5%;
+}
+
+.formula2 {
+    top: 20%;
+    left: 0;
+}
+
+.formula3 {
+    bottom: 15%;
+    left: 5%;
+}
+
+.formula4 {
+    bottom: 5%;
+    right: 5%;
+}
+
+
+/* SECTIONS */
+
+.section {
+
+    padding: 90px 7%;
+}
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 850px;
+
+    margin: 0 auto 50px;
+}
+
+.section-heading span {
+
+    color: #ffd000;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+
+    font-size: clamp(30px, 5vw, 52px);
+
+    margin: 12px 0;
+
+}
+
+.section-heading p {
+    color: #9eb3d5;
+}
+
+
+/* ABOUT */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.about-card {
+
+    padding: 35px;
+
+    background: #0b2550;
+
+    border: 1px solid #1e467c;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.about-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #ffd000;
+}
+
+.icon {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.about-card p,
+.career-card p,
+.highlight-card p {
+color: #aebfdb;
+}
+
+
+/* DARK SECTION */
+
+.dark-section {
+
+    background: #030d24;
+}
+
+.highlight-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.highlight-card {
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        145deg,
+        #0b2c5d,
+        #071b3c
+    );
+
+    border: 1px solid #19477e;
+}
+
+.number {
+
+    color: #ffd000;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    margin-bottom: 15px;
+}
+
+
+/* CAREERS */
+
+.career-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.career-card {
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    color: #07152f;
+
+    transition: 0.3s;
+}
+
+.career-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.career-card div {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* AUDIENCE */
+
+.audience-section {
+
+    padding: 90px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071b3e,
+            #0b3471
+        );
+}
+
+.audience-list {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.audience-list div {
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+
+/* EVENT */
+
+.event-section {
+
+    background: #06142f;
+}
+
+.event-grid {
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.event-info {
+
+    display: grid;
+
+    gap: 15px;
+}
+
+.event-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 22px;
+
+    background: #0b2550;
+
+    border-radius: 12px;
+}
+
+.event-item strong {
+
+    color: #ffd000;
+}
+
+.event-item span {
+
+    text-align: right;
+
+    color: #d6e1f4;
+}
+
+.free {
+
+    color: #5cff9d !important;
+
+    font-weight: 800;
+}
+
+
+/* REGISTRATION */
+
+.registration-section {
+
+    padding: 100px 7%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #32157a,
+            #15104d
+        );
+}
+
+.registration-content {
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.registration-content > span {
+
+    color: #ffd000;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.registration-content h2 {
+
+    font-size: clamp(32px, 5vw, 60px);
+
+    margin: 15px 0;
+}
+
+.registration-content p {
+
+    color: #ccd7ed;
+
+    margin-bottom: 25px;
+}
+
+.register-btn {
+
+    font-size: 18px;
+
+    padding: 15px 30px;
+}
+
+.small-text {
+
+    margin-top: 20px;
+
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: #02091b;
+
+    color: #aabbd7;
+}
+
+.footer-logo {
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+footer h3 {
+
+    color: #ffd000;
+
+    margin: 5px 0;
+}
+
+.footer-line {
+
+    height: 1px;
+
+    background: #23385d;
+
+    max-width: 700px;
+
+    margin: 30px auto;
+}
+
+.copyright {
+
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top: 60px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 350px;
+    }
+
+    .ai-circle {
+
+        width: 240px;
+        height: 240px;
+    }
+
+    .ai-circle span {
+        font-size: 65px;
+    }
+
+    .about-grid,
+    .highlight-grid,
+    .career-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .audience-list {
+
+        grid-template-columns: 1fr;
+    }
+
+    .event-item {
+
+        flex-direction: column;
+    }
+
+    .event-item span {
+
+        text-align: left;
+    }
+}
