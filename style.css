@@ -49,7 +49,7 @@ body {
 }
 .navbar nav {
     display: flex;
-    gap: 25px;
+    gap: 50px;
 }
 
 .navbar nav a {
