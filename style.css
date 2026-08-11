@@ -38,14 +38,31 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    height: 90px;
+    gap: 10px;
+    height: 55px;
 }
 
 .logo img {
-    width: 250px;
-    height: 90px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
-    display: block;
+}
+
+.logo-text {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+
+.logo-text b:first-child {
+    color: #ffc107;
+    font-size: 27px;
+}
+
+.logo-text b:last-child {
+    color: #ffc107;
 }
 .navbar nav {
     display: flex;
