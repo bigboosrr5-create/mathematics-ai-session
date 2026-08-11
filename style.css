@@ -39,7 +39,39 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 55px;
+    height: 60px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.logo-name .sigma {
+    color: #ffc107;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.logo-name .math-text {
+    color: #ffffff;
+}
+
+.logo-name .ai-text {
+    color: #ffc107;
+    font-weight: 900;
 }
 
 .logo img {
