@@ -38,12 +38,12 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    height: 75px;
+    height: 90px;
 }
 
 .logo img {
-    width: 200px;
-    height: 70px;
+    width: 250px;
+    height: 90px;
     object-fit: contain;
     display: block;
 }
