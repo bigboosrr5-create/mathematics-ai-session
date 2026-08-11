@@ -320,19 +320,15 @@ body {
     gap: 25px;
 }
 
-.about-card {
-
-    padding: 35px;
-
-    background: #0b2550;
-
-    border: 1px solid #1e467c;
-
-    border-radius: 20px;
-
-    transition: 0.3s;
+.about-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    color: #c9d8ee;
 }
 
+.about-card li {
+    margin: 6px 0;
+}
 .about-card:hover {
 
     transform: translateY(-8px);
