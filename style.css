@@ -526,7 +526,81 @@ color: #aebfdb;
 
     font-weight: 800;
 }
+html {
+    scroll-behavior: smooth;
+}
 
+.contact-section {
+    padding: 90px 7%;
+    background: #030d24;
+}
+
+.contact-grid {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 35px 25px;
+    background: linear-gradient(145deg, #0b2c5d, #071b3c);
+    border: 1px solid #1e467c;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-7px);
+    border-color: #ffd000;
+}
+
+.contact-card h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.designation {
+    color: #ffd000 !important;
+    font-weight: 700;
+}
+
+.college {
+    color: #c7d5e9 !important;
+    font-size: 14px;
+}
+
+.phone-number {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 18px 0;
+}
+
+.contact-button {
+    display: block;
+    max-width: 240px;
+    margin: 10px auto;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background: #ffd000;
+    color: #06142f;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.whatsapp-button {
+    background: #25d366;
+    color: #ffffff;
+}
+
+@media (max-width: 700px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* REGISTRATION */
 
